@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Snake Game</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; background: #181818; }
+    .instructions {
+      margin: 20px auto 10px auto;
+      width: 400px;
+      background: #222;
+      color: #fffbe7;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 2px 8px #0006;
+    }
+    .instructions span {
+      display: block;
+      color: #c7eaff;
+      margin-top: 8px;
+      font-size: 16px;
+    }
+    .gamebox {
+      width: 420px;
+      margin: 0 auto;
+      background: #222;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #0008;
+      padding: 10px 0 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    canvas {
+      background: #030000;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px #0007;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="color:#fffbe7;">Classic Snake Game</h2>
+  <div class="instructions">
+    <strong>Welcome Guest!</strong>
+    <span>Play using arrow keys</span>
+    <span>Avoid obstacles (red squares)</span>
+    <span>You can escape through the walls!</span>
+  </div>
+  <div class="gamebox">
+    <canvas id="game" width="400" height="400"></canvas>
+  </div>
+  <script src="snake.js"></script>
+</body>
+</html>
